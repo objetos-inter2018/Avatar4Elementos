@@ -106,12 +106,12 @@ public class Nivel3 extends World
             Magic m = new Magic();
             this.addObject(m, aleatorio, -25);
         }
-        if(Greenfoot.getRandomNumber(2000)<6){
+        if(Greenfoot.getRandomNumber(2000)<10){
             int aleatorio = Greenfoot.getRandomNumber(550)+25;
             Ray r = new Ray();
             this.addObject(r, aleatorio, -25);
         }
-        if(Greenfoot.getRandomNumber(4000)<3){
+        if(Greenfoot.getRandomNumber(2000)<6){
             int aleatorio = Greenfoot.getRandomNumber(550)+25;
             Bomb b = new Bomb();
             this.addObject(b, aleatorio, -25);
@@ -148,14 +148,14 @@ public class Nivel3 extends World
     public void increaseLife()
     {
         int actualLife = life.getValue();
-        if(life.getValue() <= 75)
+        if(life.getValue() <= 85)
         {
-            life.setValue(actualLife + 25);
+            life.setValue(actualLife + 15);
         }
     }
     public void decreaseElements()
     {
-        if(air.getValue() > 5 && water.getValue() > 5 && fire.getValue() > 5 && earth.getValue() > 5 )
+        if(air.getValue() >= 5 && water.getValue() >= 5 && fire.getValue() >= 5 && earth.getValue() >= 5 )
         {
             int dec = 5;
             air.setValue(air.getValue()-dec);
@@ -191,9 +191,12 @@ public class Nivel3 extends World
     }
     public void decreaseLife()
     {
-        int dec = 25;
-        if(life.getValue() >= 25)
+        int dec = 50;
+        if(life.getValue() >= 50)
             life.setValue(life.getValue() - dec);
+        else 
+            if(life.getValue() < 50 )
+                life.setValue(0);
         checkLife();
     }
     public void checkElements()
@@ -204,6 +207,10 @@ public class Nivel3 extends World
               w = new FinalWorld();
              Greenfoot.setWorld(w);
         }
+    }
+    public void fullLife()
+    {
+        life.setValue(100);
     }
     public int getworld(){
         return 3;

@@ -165,11 +165,17 @@ public class Avatar extends Actor
                         }
         }
         if(this.isTouching(Quick.class)){
-            //q.prueba1(true);
-            q.a = 1;
             this.removeTouching(Quick.class);
-            //int b = Greenfoot.getRandomNumber(2);
-           
+            if(mundo==1){
+                Nivel1 w = (Nivel1)this.getWorld();
+                w.fullLife();
+            }else if(mundo==2){
+                Nivel2 w = (Nivel2)this.getWorld();
+                w.fullLife();
+            }else if(mundo==3){
+                Nivel3 w = (Nivel3)this.getWorld();
+                w.fullLife();
+            }
         }
     }   
     public void catchEnemy()
