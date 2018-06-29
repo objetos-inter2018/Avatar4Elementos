@@ -13,7 +13,6 @@ public class Water extends Element
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     Quick q;
-    
     public  Water()
     {
         q = new Quick();
@@ -30,10 +29,10 @@ public class Water extends Element
         int alt = Greenfoot.getRandomNumber(2)+1;
         if(alt==1)
         {
-            setLocation(getX()+30,getY()+3 );
+            setLocation(getX()+30,getY()+10 );
         }
         else
-            setLocation(getX()-25, getY()+3);
+            setLocation(getX()-25, getY()+10);
     }
     public void move2()
     {

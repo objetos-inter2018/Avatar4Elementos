@@ -14,9 +14,12 @@ public class Avatar extends Actor
      */
     private World a;
     private int mundo;
-    public Avatar(World x,int m){
-        a = x;
+    Quick q;
+    public Avatar(int m){
+        //a = x;
         mundo= m;
+        q  = new Quick();
+        q.a=0;
     }
     public void act() 
     {
@@ -127,24 +130,21 @@ public class Avatar extends Actor
     }
     public void catchBonus()
     {
-        if(this.isTouching(Quick.class)){
-            this.removeTouching(Quick.class);
-        }
         if(this.isTouching(Reduction.class)){
             this.removeTouching(Reduction.class);
             if(mundo==1)
             {
                 Nivel1 w1 = (Nivel1)this.getWorld();
-                w1.decreaseFire();
+                w1.decreaseElements();
             } else if(mundo==2)
                     {
                         Nivel2 w2 = (Nivel2)this.getWorld();
-                        w2.decreaseFire();
+                        w2.decreaseElements();
                     }
                     else if(mundo==3)
                         {
                             Nivel3 w3 = (Nivel3)this.getWorld();
-                            w3.decreaseFire();
+                            w3.decreaseElements();
                         }
         }
         if(this.isTouching(LifePlus.class)){
@@ -164,7 +164,14 @@ public class Avatar extends Actor
                             w3.increaseLife();
                         }
         }
-    }
+        if(this.isTouching(Quick.class)){
+            //q.prueba1(true);
+            q.a = 1;
+            this.removeTouching(Quick.class);
+            //int b = Greenfoot.getRandomNumber(2);
+           
+        }
+    }   
     public void catchEnemy()
     {
         if(this.isTouching(Magic.class)){
@@ -206,7 +213,4 @@ public class Avatar extends Actor
             }
         }
     }
-    /*public int getworld(){
-        
-    }*/
 }

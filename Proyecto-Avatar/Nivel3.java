@@ -24,7 +24,7 @@ public class Nivel3 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
         super(600, 400, 1, false); 
-        aang = new Avatar(this,3);
+        aang = new Avatar(3);
         this.addObject(aang, 300, 335);
         
         counters();
@@ -83,17 +83,17 @@ public class Nivel3 extends World
     }
     public void addBonus()
     {
-        if(Greenfoot.getRandomNumber(2000)<2){
+        if(Greenfoot.getRandomNumber(2000)<1){
             int aleatorio = Greenfoot.getRandomNumber(550)+25;
             Quick q = new Quick();
             this.addObject(q, aleatorio, -25);
         }
-        if(Greenfoot.getRandomNumber(2000)<2){
+        if(Greenfoot.getRandomNumber(2000)<4){
             int aleatorio = Greenfoot.getRandomNumber(550)+25;
             Reduction r = new Reduction();
             this.addObject(r, aleatorio, -25);
         }
-        if(Greenfoot.getRandomNumber(2000)<2){
+        if(Greenfoot.getRandomNumber(2000)<3){
             int aleatorio = Greenfoot.getRandomNumber(550)+25;
             LifePlus l = new LifePlus();
             this.addObject(l, aleatorio, -25);
@@ -101,12 +101,12 @@ public class Nivel3 extends World
     }
     public void addEnemy()
     {
-        if(Greenfoot.getRandomNumber(2000)<1){
+        if(Greenfoot.getRandomNumber(2000)<2){
             int aleatorio = Greenfoot.getRandomNumber(550)+25;
             Magic m = new Magic();
             this.addObject(m, aleatorio, -25);
         }
-        if(Greenfoot.getRandomNumber(2000)<3){
+        if(Greenfoot.getRandomNumber(2000)<6){
             int aleatorio = Greenfoot.getRandomNumber(550)+25;
             Ray r = new Ray();
             this.addObject(r, aleatorio, -25);
@@ -198,10 +198,10 @@ public class Nivel3 extends World
     }
     public void checkElements()
     {
-        Nivel3 w;
+        FinalWorld w;
         if(air.getValue() == 0 && water.getValue() == 0 && fire.getValue() == 0 & earth.getValue() == 0)
         {
-             w = new Nivel3();
+              w = new FinalWorld();
              Greenfoot.setWorld(w);
         }
     }

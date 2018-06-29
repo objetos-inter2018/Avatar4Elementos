@@ -12,21 +12,23 @@ public class Quick extends Bonus
      * Act - do whatever the Quick wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public int a;
     public void act() 
     {
-        move();    
+        move();   
     } 
+    
     public boolean prueba1()
-    {
-        if(getWorld()!=null)
-            if(this.isTouching(Avatar.class))
+    {       boolean  b = false;
+            if(getWorld()!=null)
             {
-                this.removeTouching(Quick.class);
-                return true;
+                    if(this.isTouching(Avatar.class))
+                    {
+                        System.out.println("entro");
+                        this.removeTouching(Quick.class);
+                        b= true;
+                    }
             }
-            else 
-                return false;
-        else 
-            return false;
+            return b;
     }
 }

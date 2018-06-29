@@ -24,7 +24,7 @@ public class Nivel1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
         super(600, 400, 1, false); 
-        aang = new Avatar(this,1);
+        aang = new Avatar(1);
         this.addObject(aang, 300, 335);
         counters();
     }

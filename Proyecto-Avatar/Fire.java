@@ -19,17 +19,19 @@ public class Fire extends Element
     }
     public void act() 
     {
-        if(q.prueba1())
-            move1();
-        else 
-            move2();  
+        if(q.prueba1()) {
+                move1();
+            }
+        else{
+                move2();
+            }
     }
     public void move1()
     {
-        this.setLocation(getX(), getY()+4);
+        this.setLocation(getX(), getY()+100);
     }
     public void move2()
     {
-        this.setLocation(getX(), getY()+2);
+        this.setLocation(getX(), getY()+3);
     }
 }
