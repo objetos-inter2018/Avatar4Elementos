@@ -1,21 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Enemy here.
+ * Clase principal de los enemigos
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC
+ * @version 1.0
  */
-public class Enemy extends Actor
+abstract public class Enemy extends Actor
 {
     /**
-     * Act - do whatever the Enemy wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Metodo para actuar que hereda de actor
      */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
+    abstract public void act();
+    /**
+     * Metodo de movimiento de los enemigos
+     */
     public void move()
     {
         this.setLocation(getX(), getY()+8);

@@ -1,8 +1,7 @@
 #BlueJ class context
 comment0.target=Quick
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Quick\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Clase\ que\ forma\ parte\ de\ la\ clase\ Bonus\r\n\ \r\n\ @author\ JSHC\ \r\n\ @version\ 1.0\r\n
 comment1.params=
 comment1.target=void\ act()
-comment2.params=
-comment2.target=boolean\ prueba1()
-numComments=3
+comment1.text=\r\n\ Metodo\ para\ que\ Ray\ actue\r\n
+numComments=2

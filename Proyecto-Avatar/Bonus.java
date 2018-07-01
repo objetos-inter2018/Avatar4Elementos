@@ -1,21 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Bonus here.
+ * Clase principal de los Bonus
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC
+ * @version 1.0
  */
-public class Bonus extends Actor
+abstract public class Bonus extends Actor
 {
     /**
-     * Act - do whatever the Bonus wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Metodo para actuar que hereda de actor
      */
-    public void act() 
-    {
-        // Add your action code here.
-    }   
+    abstract public void act();
+    /**
+     * Metodo de movimiento de los Bonus
+     */
     public void move()
     {
         this.setLocation(getX(), getY()+5);

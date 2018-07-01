@@ -1,16 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ButtonHow here.
+ * Clase que representa el boton de indicaciones de juego
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC 
+ * @version 1.0
  */
 public class ButtonHow extends Actor
 {
     /**
-     * Act - do whatever the ButtonHow wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Metodo para actuar que hereda de actor
      */
     public void act() 
     {

@@ -1,17 +1,22 @@
 #BlueJ class context
 comment0.target=Avatar
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ni\u00F1ito\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Clase\ del\ personaje\ principal\ del\ juego\r\n\ \r\n\ @author\ JSHC\r\n\ @version\ 1.0\r\n
 comment1.params=m
 comment1.target=Avatar(int)
+comment1.text=\r\n\ Constructor\ del\ avatar\r\n\ @param\ m\ recibe\ el\ mundo\ del\ nivel\ en\ el\ que\ esta\r\n
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\r\n\ Metodo\ de\ para\ actuar\ del\ personaje\r\n
 comment3.params=
 comment3.target=void\ keys()
+comment3.text=\r\n\ Metodo\ para\ agregar\ el\ moviemiento\ del\ personaje\ a\ traves\ del\ teclado\r\n
 comment4.params=
 comment4.target=void\ catchElements()
-comment4.text=\r\n\ \r\n
+comment4.text=\r\n\ Metodo\ para\ inidcar\ lo\ que\ hace\ en\ caso\ de\ tocar\ los\ elementos\r\n
 comment5.params=
 comment5.target=void\ catchBonus()
+comment5.text=\r\n\ Metodo\ para\ inidcar\ lo\ que\ hace\ en\ caso\ de\ tocar\ los\ bonus\r\n
 comment6.params=
 comment6.target=void\ catchEnemy()
+comment6.text=\r\n\ Metodo\ para\ inidcar\ lo\ que\ hace\ en\ caso\ de\ tocar\ los\ enemigos\r\n
 numComments=7

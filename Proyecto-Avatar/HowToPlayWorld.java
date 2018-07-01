@@ -1,23 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class HowToPlayWorld here.
+ * Clase del mundo de las instrucciones del juego
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC 
+ * @version 1.0
  */
 public class HowToPlayWorld extends World
 {
-
     /**
-     * Constructor for objects of class HowToPlayWorld.
-     * 
+     * Constructor del mundo de HowToPlayWorld
      */
     public HowToPlayWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
     }
+    /**
+     * Metodo actuar del mundo HowToPlayWorld
+     */
     public void act()
     {
         if(Greenfoot.mouseClicked(this))

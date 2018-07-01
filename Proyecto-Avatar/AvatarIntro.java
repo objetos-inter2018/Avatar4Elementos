@@ -1,20 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class AvatarIntro here.
+ * Clase del mundo de inicio del juego
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC
+ * @version 1.0
  */
 public class AvatarIntro extends World
 {
-
-    /**
-     * Constructor for objects of class AvatarIntro.
-     * 
-     */
     ButtonHow b;
     Nivel1 n1;
+    /**
+     * Constructor del mundo AvatarIntro
+     */
     public AvatarIntro()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -23,6 +21,9 @@ public class AvatarIntro extends World
         this.addObject(b, 436, 345);
         this.showText("Start", 155, 340);
     }
+    /**
+     * Metodo actuar del mundo AvatarIntro
+     */
     public void act()
     {
         if(Greenfoot.mouseClicked(this))

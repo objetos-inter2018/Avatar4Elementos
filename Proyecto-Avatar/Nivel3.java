@@ -1,24 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Clase del nivel 3
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC
+ * @version 1.0 
  */
 public class Nivel3 extends World
 {
-
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
     Avatar aang;
     Counter water;
     Counter earth;
     Counter air;
     Counter fire;
     Counter life;
+    /**
+      * Constructor del nivel 3
+      * 
+      */
     public Nivel3()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -29,12 +28,18 @@ public class Nivel3 extends World
         
         counters();
     }
+    /**
+     * Metodo para el actuar del nivel 3
+     */
     public void act()
     {
         addElements();
         addBonus();
         addEnemy();
     }
+    /**
+     * Metodo que crea, agrega e inicializa los contadores de elementos y de la vida
+     */
     public void counters()
     {
         int elements = 25;
@@ -58,6 +63,9 @@ public class Nivel3 extends World
         life.setValue(100);
         this.addObject(life, 536, 20);        
     }
+    /**
+     * Metodo que crea y agrega los elementos
+     */
     public void addElements()
     {
         if(Greenfoot.getRandomNumber(2000)<15){
@@ -81,6 +89,9 @@ public class Nivel3 extends World
             this.addObject(e1, aleatorio, -25);
         }
     }
+    /**
+     * Metodo que crea y agrega los bonus
+     */    
     public void addBonus()
     {
         if(Greenfoot.getRandomNumber(2000)<1){
@@ -99,6 +110,9 @@ public class Nivel3 extends World
             this.addObject(l, aleatorio, -25);
         }
     }
+    /**
+     * Metodo que crea y agrega los enemigos
+     */
     public void addEnemy()
     {
         if(Greenfoot.getRandomNumber(2000)<2){
@@ -117,6 +131,9 @@ public class Nivel3 extends World
             this.addObject(b, aleatorio, -25);
         }
     }
+    /**
+     * Metodo que decrementa el elemento agua
+     */
     public void decreaseWater()
     {
         int newValue = water.getValue() - 1 ;
@@ -124,6 +141,9 @@ public class Nivel3 extends World
             water.setValue(newValue);
         checkElements();
     }
+    /**
+     * Metodo que decrementa el elemento fuego
+     */
     public void decreaseFire()
     {
         int newValue = fire.getValue() - 1 ;
@@ -131,6 +151,9 @@ public class Nivel3 extends World
            fire.setValue(newValue);
         checkElements();
     }
+    /**
+     * Metodo que decrementa el elemento tierra
+     */
     public void decreaseEarth()
     {
         int newValue = earth.getValue() - 1 ;
@@ -138,13 +161,18 @@ public class Nivel3 extends World
             earth.setValue(newValue);
         checkElements();
     }
+    /**
+     * Metodo que decrementa el elemento aire
+     */
     public void decreaseAir()
     {
         int newValue = air.getValue() - 1 ;
         if(air.getValue()>0)
             air.setValue(newValue);
         checkElements();
-    }
+    } /**
+     * Metodo que incrementa la vida del jugador
+     */
     public void increaseLife()
     {
         int actualLife = life.getValue();
@@ -153,6 +181,9 @@ public class Nivel3 extends World
             life.setValue(actualLife + 15);
         }
     }
+    /**
+     * Metodo que decrementa cierto numero de cada elemento
+     */
     public void decreaseElements()
     {
         if(air.getValue() >= 5 && water.getValue() >= 5 && fire.getValue() >= 5 && earth.getValue() >= 5 )
@@ -164,6 +195,9 @@ public class Nivel3 extends World
             earth.setValue(earth.getValue()-dec);
         }
     }
+    /**
+     * Metodo que incrementa cierto numero de cada elemento
+     */
     public void increaseElements()
     {
         if(air.getValue() <= 20-5 && water.getValue() <= 20-5 && fire.getValue() <= 20-5 && earth.getValue() <= 20-5 )
@@ -175,11 +209,17 @@ public class Nivel3 extends World
             earth.setValue(earth.getValue()+inc);
         }
     }
+    /**
+     * Metodo que cambia el contador vida a cero
+     */
     public void removeLife()
     {
         life.setValue(0);
         checkLife();
     }
+    /**
+     * Metodo que checa si la vida a llegado a cero
+     */
     public void checkLife()
     {
         if(life.getValue() == 0)
@@ -189,6 +229,9 @@ public class Nivel3 extends World
             Greenfoot.setWorld(w);
         }
     }
+    /**
+     * Metodo que decrementa cierto valor la vida
+     */
     public void decreaseLife()
     {
         int dec = 50;
@@ -199,6 +242,9 @@ public class Nivel3 extends World
                 life.setValue(0);
         checkLife();
     }
+    /**
+     * Metodo que checa si los contadores de los elementos han llegado a cero
+     */
     public void checkElements()
     {
         FinalWorld w;
@@ -208,11 +254,11 @@ public class Nivel3 extends World
              Greenfoot.setWorld(w);
         }
     }
+    /**
+     * Metodo que llena el contador vida
+     */
     public void fullLife()
     {
         life.setValue(100);
-    }
-    public int getworld(){
-        return 3;
     }
 }

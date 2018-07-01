@@ -1,26 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Niñito here.
+ * Clase del personaje principal del juego
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC
+ * @version 1.0
  */
 public class Avatar extends Actor
 {
-    /**
-     * Act - do whatever the Niñito wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    private World a;
     private int mundo;
-    Quick q;
+    /**
+     * Constructor del avatar
+     * @param m recibe el mundo del nivel en el que esta
+     */
     public Avatar(int m){
-        //a = x;
-        mundo= m;
-        q  = new Quick();
-        q.a=0;
+        mundo = m;
     }
+    /**
+     * Metodo de para actuar del personaje
+     */
     public void act() 
     {
         keys();
@@ -28,6 +26,9 @@ public class Avatar extends Actor
         catchBonus();
         catchEnemy();
     }  
+    /**
+     * Metodo para agregar el moviemiento del personaje a traves del teclado
+     */
     public void keys()
     {
         if(Greenfoot.isKeyDown("left"))
@@ -55,7 +56,7 @@ public class Avatar extends Actor
         }
     }
     /**
-     * 
+     * Metodo para inidcar lo que hace en caso de tocar los elementos
      */
     public void catchElements()
     {
@@ -128,6 +129,9 @@ public class Avatar extends Actor
                         }
         }
     }
+    /**
+     * Metodo para inidcar lo que hace en caso de tocar los bonus
+     */
     public void catchBonus()
     {
         if(this.isTouching(Reduction.class)){
@@ -178,6 +182,9 @@ public class Avatar extends Actor
             }
         }
     }   
+    /**
+     * Metodo para inidcar lo que hace en caso de tocar los enemigos
+     */
     public void catchEnemy()
     {
         if(this.isTouching(Magic.class)){

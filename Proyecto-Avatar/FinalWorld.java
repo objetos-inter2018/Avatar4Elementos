@@ -1,17 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class FinalWorld here.
+ * Clase del mundo final del juego
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC
+ * @version 1.0
  */
 public class FinalWorld extends World
 {
 
     /**
-     * Constructor for objects of class FinalWorld.
-     * 
+     * Constructor del mundo Final World
      */
     public FinalWorld()
     {    

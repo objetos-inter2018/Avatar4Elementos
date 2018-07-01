@@ -1,16 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class LifePlus here.
+ * Clase que forma parte de la clase Bonus
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC 
+ * @version 1.0
  */
 public class LifePlus extends Bonus
 {
     /**
-     * Act - do whatever the LifePlus wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Metodo para que LifePlus actue
      */
     public void act() 
     {

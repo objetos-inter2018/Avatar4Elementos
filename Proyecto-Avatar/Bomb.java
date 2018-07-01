@@ -1,16 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Bomb here.
+ * Clase que forma parte de la clase Enemy
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JSHC 
+ * @version 1.0
  */
 public class Bomb extends Enemy
 {
     /**
-     * Act - do whatever the Bomb wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Metodo para que Bomb actue
      */
     public void act() 
     {
