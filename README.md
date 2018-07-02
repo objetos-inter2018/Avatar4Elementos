@@ -12,7 +12,7 @@ Para poder controlar el movimiento del avatar debemos usar las teclas de direcci
 Atrapar el número de elementos que se indique en cada nivel hasta pasar los 3 niveles, en caso de que la vida del Avatar llegue a cero el juego terminará.
 
 
-### ELementos 
+### Elementos 
 - Agua
 - Tierra
 - Aire
@@ -34,7 +34,9 @@ Atrapar el número de elementos que se indique en cada nivel hasta pasar los 3 n
 ![b](http://www.pngmart.com/files/2/Aang-PNG-File.png)
 
 
-##Link para ver video
+## Link para ver video
 [Abrir en youtube](https://www.youtube.com/watch?v=ffRY6VnwaMU&t=26s)
-##Link para jugar online
+
+
+## Link para jugar online
 [Abrir en Greenfoot](http://www.greenfoot.org/scenarios/21817)
