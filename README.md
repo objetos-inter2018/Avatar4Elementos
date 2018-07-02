@@ -24,14 +24,17 @@ Atrapar el número de elementos que se indique en cada nivel hasta pasar los 3 n
 - **Vida al maximo** Al atrapar este bonus la vida del avatar llega a 100.
 - **Reducción de elementos** Con este bonus el numero de elementos a atrapar se reduce.
 - **Aumentador de vida** Al obtener este bonus la vida del avatar aumenta si es que estaba reducida.
-![a](https://banner2.kisspng.com/20180131/tge/kisspng-aang-appa-katara-korra-aang-png-transparent-image-5a72516215f936.56555056151744137809.jpg)
 
 ### Enemigos
 - **Bomba** Cuando atrapas una bomba la vida del Avatar llega a cero y pierdes.
 - **Rayo** Cuando tocas un rayo la vida del Avatar disminuye.
 - **Magia** Al atrapar este enemigo los elementos a atrapar aumenta y el juego se alarga.
+
+
 ![b](http://www.pngmart.com/files/2/Aang-PNG-File.png)
 
 
 ##Link para ver video
+[Abrir en youtube](https://www.youtube.com/watch?v=ffRY6VnwaMU&t=26s)
 ##Link para jugar online
+[Abrir en Greenfoot](http://www.greenfoot.org/scenarios/21817)
