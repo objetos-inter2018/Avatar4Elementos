@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# Avatar 4 Elements
 
-You can use the [editor on GitHub](https://github.com/objetos-inter2018/Avatar4Elementos/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Aang debe atrapar los elementos necesarios para poder salir vencedor. Pasará por 3 niveles con mas dificultad cada uno. Ayuda a Anng a controlar sus elementos con este divertido juego.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Texto alternativo](http://cdn.playbuzz.com/cdn/5e2b7709-216e-49c1-bdca-88771415cd02/7079d731-c926-4377-82fc-3f5028d8e167.jpg)
 
-### Markdown
+## Descripción
+### Controles
+Para poder controlar el movimiento del avatar debemos usar las teclas de dirección izquierda, derecha para desplazar a los lados y la tecla hacia arriba para que salte.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Objetivo
+Atrapar el número de elementos que se indique en cada nivel hasta pasar los 3 niveles, en caso de que la vida del Avatar llegue a cero el juego terminará.
 
-```markdown
-Syntax highlighted code block
+![Avatar](C:\Users\jshc1\Documents\CUARTO SEMESTRE UASLP\INTERSEMESTRAL POO\Proyecto-Avatar\images\Aang(1).png)
+### ELementos 
+- Agua
+- Tierra
+- Aire
+- Fuego
+![Elementos](http://img2.amando.it/imagesdyn/articoli/85/21/400/94381.jpg)
+### Bonus
+- **Vida al maximo** Al atrapar este bonus la vida del avatar llega a 100.
+- **Reducción de elementos** Con este bonus el numero de elementos a atrapar se reduce.
+- **Aumentador de vida** Al obtener este bonus la vida del avatar aumenta si es que estaba reducida.
+### Enemigos
+- **Bomba** Cuando atrapas una bomba la vida del Avatar llega a cero y pierdes.
+- **Rayo** Cuando tocas un rayo la vida del Avatar disminuye.
+- **Magia** Al atrapar este enemigo los elementos a atrapar aumenta y el juego se alarga.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
+and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/objetos-inter2018/Avatar4Elementos/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+##Link para ver video
+##Link para jugar online
